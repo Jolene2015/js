@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+  let numbers = [2,17,13,6,22,31,45,66,100,-18];
+  //         1. перебрати його циклом while
+  let i=0;
+  while(i<numbers.length){
+    console.log(numbers[i]);
+    i++;
+  }
+  //         2. перебрати його циклом for
+  for(let j=0;j<numbers.length;j++){
+      console.log(numbers[j]);
+  }
+  //         3. перебрати циклом while та вивести  числа тільки з непарним індексом
+  while(i<numbers.length) {
+      if (i % 2 == 1) {
+      console.log(numbers[i]);
+    }
+    i++;
+  }
+
+  // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+  for(let k=0;k<numbers.length;k++){
+          if (k % 2 == 1) {
+          console.log(numbers[k]);
+        }
+  }
+  // 5. перебрати циклом while та вивести  числа тільки парні  значення
+  while(i<numbers.length) {
+      if (i % 2 == 0) {
+      console.log(numbers[i]);
+    }
+    i++;
+  }
+  // 6. перебрати циклом for та вивести  числа тільки парні  значення
+  for(let l=0;l<numbers.length;l++){
+          if (numbers[l] % 2 == 0) {
+          console.log(numbers[l]);
+        }
+  }
+  // 7. замінити кожне число кратне 3 на слово "okten"
+  for(let g=0;g<numbers.length;g++){
+      if (numbers[g] % 3 == 0) {
+          numbers[g] = "okten";
+      }
+      console.log(numbers[g]);
+  }
+  // 8. вивести масив в зворотньому порядку.
+  for(let f=numbers.length;f>=0;f--){
+      console.log(numbers[f]);
+  }
+
+  // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+  i=numbers.length;
+  while(i>=0){
+    console.log(numbers[i]);
+    i--;
+  }
+  // Task 2 is the same as task 8
+  // 3
+  i=numbers.length;
+  while(i>=0) {
+      if (i % 2 == 1) {
+      console.log(numbers[i]);
+    }
+    i--;
+  }
+  // 4
+  for(let k=numbers.length;k>=0;k--){
+          if (k % 2 == 1) {
+          console.log(numbers[k]);
+        }
+  }
+  // 5
+  i=numbers.length;
+  while(i>=0){
+      if (i % 2 == 0) {
+      console.log(numbers[i]);
+    }
+    i--;
+  }
+  // 6
+  // 6. перебрати циклом for та вивести  числа тільки парні  значення
+  for(let l=numbers.length;l>=0;l--){
+          if (numbers[l] % 2 == 0) {
+          console.log(numbers[l]);
+        }
+  }
+</script>
+
+</body>
+</html>
