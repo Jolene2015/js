@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // - створити функцію яка обчислює та повертає площу прямокутника висотою
+function sRect(a,b) {
+    return a*b;
+}
+
+    // - створити функцію яка обчислює та повертає площу кола
+    function sRound(r) {
+        return Math.PI*Math.pow(r,2);
+
+    }
+    // - створити функцію яка обчислює та повертає площу циліндру
+    function sCilindr(r,h) {
+        return 2* Math.PI*r*h;
+
+    }
+    // - створити функцію яка приймає масив та виводить кожен його елемент
+    function printArray(array) {
+        for (const i of array) {
+            console.log(i);
+        }
+    }
+
+    // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+    function createP(text) {
+        document.write(`<p> ${text} </p>`);
+        //document.write("<p> "+text+" </p>");
+    }
+
+    createP("Hi all!");
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+    function createList(text){
+        document.write("<ul>");
+        for(let i=0;i<3;i++){
+            document.write(`<li>${text}</li>`);
+        }
+        document.write("</ul>");
+    }
+
+    createList("list");
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+    function createListS(text,size){
+        document.write("<ul>");
+        for(let i=0;i<size;i++){
+            document.write(`<li>${text}</li>`);
+        }
+        document.write("</ul>");
+    }
+
+    createListS("lists",5);
+    // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+    //
+    function createListFromArray(array){
+        document.write("<ul>");
+        for(const i of array){
+            document.write(`<li>${i}</li>`);
+        }
+        document.write("</ul>");
+    }
+    createListFromArray([true,false]);
+    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+    function printPerson(person){
+        for(const item of person){
+            document.write(`<div>${item.id} - ${item.name} - ${item.age}</div>`);
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
