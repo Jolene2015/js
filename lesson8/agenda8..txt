@@ -1,0 +1,11 @@
+DOM
+bytag,
+byclass,
+id,
+search in current element
+children,
+child,
+node / element
+querySelector
+formsAPI
+classlist
